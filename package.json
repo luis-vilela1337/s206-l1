@@ -1,0 +1,24 @@
+{
+  "name": "s206-l1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luis-vilela1337/s206-l1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luis-vilela1337/s206-l1/issues"
+  },
+  "homepage": "https://github.com/luis-vilela1337/s206-l1#readme",
+  "devDependencies": {
+    "cypress": "^10.10.0"
+  }
+}
