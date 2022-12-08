@@ -1,3 +1,16 @@
+const funcaoParaTeste = ()=>{
+  cy.get('#text2').type('inatel')
+  cy.get('#text4').type('inatel')
+  cy.get('#text3').type('inatel')
+  cy.get('#opcao').select(1)
+  cy.get('#cursoPretendido').select(1)
+  cy.get('#turno').select(1)
+  cy.get('#curso-de-origem').type('inatel')
+  cy.get('#instituicao-de-origem').type('inatel')
+  cy.get('#receber-comunicacoes-inatel').click()
+  cy.get('#button10').click()
+}
+
 describe('inatel teste', () => {
   it('entrar no site inatel e checkar saiba mais de graduação', () => {
     cy.visit('https://inatel.br/home/')
@@ -26,16 +39,7 @@ describe('inatel teste', () => {
 
   it('entrar no site inatel vestibular digitar tudo mas nao ter email valido', () => {
     cy.visit('https://inatel.br/vestibular/transferencia-e-portador-de-diploma')
-    cy.get('#text2').type('inatel')
-    cy.get('#text4').type('inatel')
-    cy.get('#text3').type('inatel')
-    cy.get('#opcao').select(1)
-    cy.get('#cursoPretendido').select(1)
-    cy.get('#turno').select(1)
-    cy.get('#curso-de-origem').type('inatel')
-    cy.get('#instituicao-de-origem').type('inatel')
-    cy.get('#receber-comunicacoes-inatel').click()
-    cy.get('#button10').click()
+    funcaoParaTeste()
     cy.get('.gvalidation-error-text').should('contain.text','Introduza um email valido: p.e. n...@dominio.pt')
   })
 

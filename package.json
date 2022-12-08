@@ -11,7 +11,8 @@
     "cypress-mochawesome-reporter": "^3.2.3"
   },
   "scripts": {
-    "test": "cypress run --spec 'cypress/e2e/**'"
+    "test": "cypress run --spec 'cypress/e2e/**'",
+    "cypress:open": "cypress open"
   },
   "author": "",
   "license": "ISC",
